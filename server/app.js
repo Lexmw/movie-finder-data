@@ -14,9 +14,9 @@ var cache = {};
 app.get("/", (req, res) => {
     var movieID = req.query.i;
     var movieTitle = encodeURI(req.query.t);
-    var movieIDUrl = "http://www.omdbapi.com/?i=" + movieID + "&apikey=8730e0e";
+    var movieIDUrl = "http://www.omdbapi.com/?i=" + movieID + "&apikey=";
     var movieTitleUrl =
-    "http://www.omdbapi.com/?t=" + movieTitle + "&apikey=8730e0e";
+    "http://www.omdbapi.com/?t=" + movieTitle + "&apikey=";
 
   //These if statements are describing the two pathways that take place based on the object property
 
